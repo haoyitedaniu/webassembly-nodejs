@@ -15,7 +15,9 @@ const env = {
 
 var typedArray = new Uint8Array(source);
 
-WebAssembly.instantiate(typedArray).then(result => {
+WebAssembly.instantiate(typedArray, {
+  env: env
+}).then(result => {
   console.log(util.inspect(result, true, 0));
   console.log(result.instance.exports._add(9, 9));
 }).catch(e => {
