@@ -34,3 +34,7 @@ node index.js
 
 ## Web
 Host the project on IIS, and then visit `wasm/index.htm` and `js-wasm/index.htm`.
+
+## References
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate
+- https://developer.mozilla.org/en-US/docs/WebAssembly/existing_C_to_wasm
